@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>custom service</title>
+	<script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="lib.js"></script>
+</head>
+<body ng-app="Myapp">
+<div ng-controller="controlls">
+Text:<input type="text" ng-model="inbox"><br><br>
+Function:<select ng-model="select">
+		    <option value="1" ng-model="k">Reverse</option>
+		    <option value="2">To UpperCase</option>
+		    <option value="3">To LowerCase</option>
+		    <option value="4">Reverse fare</option>
+	     </select><br><br><br>
+
+<center><input type="submit" ng-click="run(inbox,select)"></center>
+	     <br>
+Output:<input type="text" ng-model="outbox"><br><br>
+
+</div>
+</body>
+</html>
